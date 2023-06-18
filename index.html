@@ -5,25 +5,114 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>GPT4 Chat API Model</title>
-  <link rel="stylesheet" href = "./style.css">
+  <link rel="stylesheet" href = "./styles.css">
   <link rel="icon" href="./favicon.ico" type="image/x-icon">
 </head>
 <body>
-  <main>
-    <h1>ChatGPT4 Course Outline Generator</h1>
-    <br>
-    <div id="chat-container">
-      <div id="chat-log"></div>
-      <div id="user-input">
-        <input type="text" id="user-input-box" placeholder="Type your message here...">
-        <button id="send-button">Send</button>
-      </div>
+
+  <!DOCTYPE html>
+<html>
+<head>
+  <title>CourseCraft Chatbot</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <br><br><br><br><br>
+
+  <h1>CourseCraft.ai Chatbot</h1>
+  <h3>Crafting the future of course logistics</h3>
+  
+  <!-- <div id="img-container">
+    <img src="images/Screenshot 2023-06-18 at 3.34.43 PM.png" alt="">
+  </div> -->
+  
+  <br>
+  <br>
+  <br>
+  <div id="chat-container">
+    <div id="chat-log"></div>
+    <div id="user-input">
+      <input type="text" id="user-input-box" placeholder="Type your message here...">
+      <button id="send-button">Send</button>
     </div>
+  </div>
 
+  <div id="upload-file-container">
+    <h2>Add Links Here</h2>
+    <div id="user-input">
+      <input type="text" id="user-input-box" placeholder="Add your links here...">
+      <button id="send-button">Send</button>
+    </div>
+  </div>
 
+  <br><br><br><br><br><br><br><br><br><br><br><br><br>
+  <br><br><br><br><br>
+  
+  <table class="task-table">
+    <thead>
+      <tr>
+        <th>Date</th>
+        <th>Task</th>
+        <th>Role</th>
+        <th>Instruction</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>January 10, 2023</td>
+        <td>Create and maintain a comprehensive Reader Schedule</td>
+        <td>GSI/UGSI</td>
+        <td>Create a Google Calendar event for each reader meeting and pedagogy topic for the semester. Set reminders for action items, grading due dates, and all-hands announcements.</td>
+      </tr>
+      <tr>
+        <td>January 12, 2023</td>
+        <td>Reader/Tutor Onboarding</td>
+        <td>GSI/UGSI</td>
+        <td>Send a welcome email to all new readers and tutors, providing them with necessary information and resources. Schedule an onboarding meeting on Google Calendar.</td>
+      </tr>
+      <tr>
+        <td>January 14, 2023</td>
+        <td>Create Staff Piazza</td>
+        <td>GSI/UGSI</td>
+        <td>Create a Piazza for staff and send an invitation email to all staff members.</td>
+      </tr>
+      <tr>
+        <td>January 17, 2023</td>
+        <td>Discussion Planning</td>
+        <td>GSI/UGSI</td>
+        <td>Schedule all discussions on Google Calendar and set reminders for each discussion.</td>
+      </tr>
+      <tr>
+        <td>Weekly: January 17, 2023 - May 13, 2023</td>
+        <td>Homework Pedagogy Development</td>
+        <td>GSI/UGSI</td>
+        <td>Send weekly emails to TAs and readers with guidance on upcoming homework assignments, highlighting potential student struggles and providing teaching tips.</td>
+      </tr>
+      <tr>
+        <td>Weekly: January 17, 2023 - May 13, 2023</td>
+        <td>Managing CalTime</td>
+        <td>GSI/UGSI</td>
+        <td>Send bi-weekly reminders to log hours in CalTime.</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <script src="index.js"></script>
+  
+
+  <!-- <main>
+
+    <h1>ChatGPT4 Course Outline Generator</h1>
     <p>Submit link to handbook.</p>
     <form action="">
       <input type="text" name="message" id="documentlink">
+      <button type="submit">Send</button>
+    </form>
+    <br>
+    <br>
+    <p>Ask questions about the course outline & summary.</p>
+    <form action="">
+      <input type="text" name="message" id="message">
       <button type="submit">Send</button>
     </form>
 
@@ -31,8 +120,9 @@
 
     <div id="chat-log">
     </div>
-  </main>
+  </main> -->
 
+<!-- 
   <script>
       let messages = []
       const chatLog = document.getElementById('chat-log');
@@ -81,6 +171,6 @@
     // chatwithpdf.loadPdf({"pdf_url":"https://drive.google.com/file/d/1ZLkuiuLWzHnlY_UVYEN1_uw1fXdvbqe3/edit"})
     // // variables and swap ins
 
-  </script>
+  </script> -->
 </body>
 </html>
