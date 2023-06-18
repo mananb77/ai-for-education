@@ -4,9 +4,8 @@ import bodyParser from "body-parser";
 import cors from "cors";
 
 const configuration = new Configuration({
-  // initialize here
-  // organization: "",
-  // apiKey: "",
+  organization: 'org-t5BD0Ux8dO35xYFEdnLVgc7E',
+  apiKey: "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",
 });
 
 const openai = new OpenAIApi(configuration);
@@ -17,23 +16,25 @@ const port = 3000;
 app.use(bodyParser.json())
 app.use(cors());
 
-app.post("/", async (req, res)) => {
-
-  cost { message } = req.body;
+app.post("/", async (req, res) => {
+  const { message } = req.body;
 
   const completion = await openai.createChatCompletion({
     model: "gpt-3.5-turbo",
     messages: [
-      {role: "user", content: "Hello World"},
-    ]
+      {role: "system", content: "You are courseLogisticsGPT, a helpful assistant for developing todo lists and calendar outlines for developing and running courses."},
+      {role: "user", content: message}
+    ],
+    temperature: 0
   });
+
+  console.log(completion.data.choices[0].message);
 
   res.json({
     completion: completion.data.choices[0].message
   })
-}
-
+});
 
 app.listen(port, () => {
   console.log(`Example app listening at http://localhost:${port}`)
-})
+});
